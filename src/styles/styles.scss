@@ -1,0 +1,153 @@
+@import 'normalize';
+$primary-color: white;
+$bg: black;
+
+
+body {
+  background-color:#DCDCDC;
+  font-family: 'Karla', sans-serif;
+}
+
+*, *:after, *::before{
+  box-sizing: border-box;
+}
+
+.container{
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 20px;
+}
+
+.main-header{
+  text-align: center;
+}
+
+//Article section
+
+.main-articles{
+  article{
+    display: flex;
+    align-items: center;
+  
+
+  h5{
+
+  }
+
+  p{
+    
+  }
+
+  .article-details{
+    padding: 7rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50%;
+  }
+
+  figure{
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50%;
+    max-width: 50%;
+    padding: 3rem;
+    margin: 0;
+
+    & > img{
+      width: 100%;
+    }
+  }
+
+  &:nth-child(even){
+    flex-direction: row-reverse;
+  }
+ }
+
+ .articles-footer{
+   text-align: center;
+ }
+}
+
+.contact{
+  display: flex;
+  background-color: rgb(109, 160, 143);
+ // text-align: center;
+  height: 25rem;
+	padding: 30px;
+	margin: 50px auto;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+	-moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+  
+  //general rules for all rows
+input[type="text"]
+ {
+  box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	outline: none;
+	// display: block;
+	//  width: 100%;
+	padding: 2px;
+	border: none;
+  border-bottom: 1px solid black;
+	background: transparent;
+	 margin-bottom: 10px;
+  height: 30px;
+  
+ }
+
+ .contact-header{
+   text-align: center;
+ }
+
+ #email{
+  padding-left: 22.3rem;
+ }
+
+ .row-3 input{
+   width: 25rem;
+ }
+
+ .row-2 label{
+   display: block;
+ }
+
+ .row-2 input{
+  width: 50rem; 
+ }
+
+ #contact-button{
+   float: right;
+   text-align: center;
+   padding: 0.4rem;
+  border: 0.7px outset black;
+   background: transparent;
+ }
+
+
+}
+.main-footer{
+  text-align: center;
+}
+
+
+
+.hidden {
+  display: none;
+}
+
+.modal-dialog{
+  position: fixed;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color:  grey;
+  box-shadow: 0 0 10px 1px rgba(0,0,0,.4);
+  padding: 20px;
+  
+  /* Centrado */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
