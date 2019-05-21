@@ -44,6 +44,7 @@ class Contact {
 }
 
 // var local = localStorage.getItem('Contacts') ? JSON.parse(localStorage.getItem('Contacts')) : []; 
+var contacts = [];
 var form = document.getElementById('contact-form');
 const modal = document.getElementById('modal-dialog');
 const closeButton = document.getElementById('close-modal');
@@ -61,8 +62,9 @@ form.addEventListener('submit', (e) => {
   var message = document.getElementById('Message').value;
 
   var contact = new Contact(name, email, tech, message);
+  contacts.push(contact);
   console.log(contact);
-  localStorage.setItem('Contacts', JSON.stringify(contact));
+  localStorage.setItem('Contacts', JSON.stringify(contacts));
 
   form.reset();
   toggleModal();

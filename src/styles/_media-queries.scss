@@ -1,6 +1,44 @@
-// @media screen and (max-width: 780px) {
-//   body {
-//     // Si la pantalla tiene MENOS de 780px de ancho el fondo es rojo
-//     background: red;
-//   }
-// }
+@media screen and (max-width: 780px) {
+    .main-articles{
+        article{
+          flex-direction: column-reverse;
+          align-items: center;
+    
+          figure{
+            flex-basis: 100%;
+            max-width: 100%;
+          }
+    
+          &:nth-child(even){
+            flex-direction: column-reverse;
+          }
+        }
+      }
+
+      .contact{
+          display: block;
+      }
+
+      #email{
+          position: relative;
+          top: 3.5rem;
+          right: 25.3rem;
+      }
+
+      .contact-header{
+          position: relative;
+          bottom: 2rem;
+      }
+
+      .row-1{
+          position: relative;
+          bottom: 0.5rem;
+      }
+
+    //   .row-3 input{
+    //       position: relative;
+    //         top: 1rem;
+         
+    // }
+
+}
